@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Relations>
+  <Relation sourcetypeid="[NodeTypeAdditionalID]" sourceid="[NodeAdditionalID]"
+            destinationtypeid="[NodeTypeAdditionalID]" destinationid="[NodeAdditionalID]" bidirectional="[true|false]">
+  </Relation>
+  <Relation sourcetypeid="6" sourceid="1234" destinationtypeid="5" destinationid="4321" bidirectional="true"></Relation>
+</Relations>

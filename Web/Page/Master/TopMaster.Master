@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TopMaster.master.cs" Inherits="RaaiVan.Web.Page.Master.TopMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body class="ColdBackgroundColor Direction TextAlign" style="font-family:IRANSans;">
+    <form id="idFrmMaster" runat="server">
+	    <div id="masterContentSection" class="small-12 medium-12 large-12 rv-content-section" style="position:relative; padding-top:0.5rem;">
+		    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+	    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+#test data
+
+http://localhost:2222/api/stock/csv?pl=10&s=129&ss=3&cn=c1&id=10&range=0.1:0.1,0.2:0.2&map=rnn&filename=stock_c3_10
+http://localhost:2222/api/stock/csv?pl=10&s=0&ss=0&cn=c1&id=0&ie=true&range=0.1:0.1,0.2:0.2&map=rnn&filename=stock_real_10
+
+http://localhost:2222/api/stock/csv?pl=10&s=129&ss=3&cn=c1&id=20&range=0.1:0.1,0.2:0.2&map=rnn&filename=stock_c3_20
+http://localhost:2222/api/stock/csv?pl=10&s=0&ss=0&cn=c1&id=10&ie=true&range=0.1:0.1,0.2:0.2&map=rnn&filename=stock_real_20
+
+http://localhost:2222/api/stock/csv?pl=10&s=129&ss=3&cn=c1&id=30&range=0.1:0.1,0.2:0.2&map=rnn&filename=stock_c3_30
+http://localhost:2222/api/stock/csv?pl=10&s=0&ss=0&cn=c1&id=20&ie=true&range=0.1:0.1,0.2:0.2&map=rnn&filename=stock_real_30
+
+
+#progress
+
+http://localhost:2222/api/stock/create_csv_status
+
+
+#real data
+
+http://localhost:2222/api/stock/csv?pl=10&s=129&ss=3&cn=c1&range=0.1:0.1,0.2:0.2&map=rnn&filename=stock_c3_1
+http://localhost:2222/api/stock/csv?pl=0&s=0&ss=0&cn=c1&range=0.1:0.1,0.2:0.2&map=rnn&filename=stock_real_1
+
+
+#identify clusters
+http://localhost:2222/api/stock/correlations?ct=0.45&period=200

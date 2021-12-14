@@ -1,0 +1,251 @@
+﻿{
+  "day_of_week": false,
+  "period": 14,
+  "prediction_period": 14,
+  "fill_target_with_slide": true,
+  "transforms": [
+    {
+      "name": "roc_trend_avg",
+      "operation": {
+        "operator": "avg",
+        "sub": [
+          { "name": "roc_trend_60_level" },
+          { "name": "roc_trend_20_level" },
+          { "name": "roc_trend_10_level" },
+          { "name": "roc_trend_5_level" }
+        ]
+      }
+    }
+  ],
+  "filters": [
+    {
+      "name": "roc_trend_avg",
+      "operator": ">=",
+      "value": 0.4
+    },
+    {
+      "name": "roc_trend_20_level",
+      "operator": ">=",
+      "value": 0.15
+    },
+    {
+      "name": "roc_trend_10_level",
+      "operator": ">=",
+      "value": 0.1
+    },
+    {
+      "name": "roc_trend_20_negative",
+      "operator": "<=",
+      "value": 3
+    }
+  ],
+  "drop": [ "roc_trend_avg" ],
+  "indicators": {
+    "total_roc": [
+      { "trend_period": 60 },
+      { "trend_period": 20 },
+      { "trend_period": 10 },
+      { "trend_period": 5 }
+    ],
+    "price_roc": [
+      { "trend_period": 60 },
+      { "trend_period": 20 },
+      { "trend_period": 10 },
+      { "trend_period": 5 }
+    ],
+    "industry_roc": [
+      { "trend_period": 60 },
+      { "trend_period": 20 },
+      { "trend_period": 10 },
+      { "trend_period": 5 }
+    ],
+    "market_roc": [
+      { "trend_period": 60 },
+      { "trend_period": 20 },
+      { "trend_period": 10 },
+      { "trend_period": 5 },
+      { "prediction_period": 30 }
+    ],
+    "roc": [
+      { "trend_period": 60 },
+      { "trend_period": 20 },
+      { "trend_period": 10 },
+      { "trend_period": 5 },
+      {
+        "period": 1,
+        "prediction_period": 60
+      }
+    ],
+    "vroc": [
+      { "trend_period": 60 },
+      { "trend_period": 20 },
+      { "trend_period": 10 },
+      { "trend_period": 5 },
+      {
+        "period": 1,
+        "prediction_period": 30
+      }
+    ],
+    "bollinger_band": [
+      { "period": 10 },
+      { "period": 15 }
+    ],
+    "sma": [
+      {
+        "period": 5,
+        "prediction_period": 1
+      },
+      {
+        "period": 10,
+        "prediction_period": 1
+      },
+      {
+        "period": 15,
+        "prediction_period": 1
+      },
+      {
+        "period": 20,
+        "prediction_period": 1
+      },
+      {
+        "period": 30,
+        "prediction_period": 1
+      },
+      {
+        "period": 50,
+        "prediction_period": 1
+      }
+    ],
+    "wma": [
+      {
+        "period": 5,
+        "prediction_period": 1
+      },
+      {
+        "period": 10,
+        "prediction_period": 1
+      },
+      {
+        "period": 15,
+        "prediction_period": 1
+      },
+      {
+        "period": 20,
+        "prediction_period": 1
+      },
+      {
+        "period": 30,
+        "prediction_period": 1
+      },
+      {
+        "period": 50,
+        "prediction_period": 1
+      }
+    ],
+    "ema": [
+      {
+        "period": 5,
+        "prediction_period": 1
+      },
+      {
+        "period": 10,
+        "prediction_period": 1
+      },
+      {
+        "period": 15,
+        "prediction_period": 1
+      },
+      {
+        "period": 20,
+        "prediction_period": 1
+      },
+      {
+        "period": 30,
+        "prediction_period": 1
+      },
+      {
+        "period": 50,
+        "prediction_period": 1
+      }
+    ],
+    "dema": [
+      {
+        "period": 5,
+        "prediction_period": 1
+      },
+      {
+        "period": 10,
+        "prediction_period": 1
+      },
+      {
+        "period": 15,
+        "prediction_period": 1
+      },
+      {
+        "period": 20,
+        "prediction_period": 1
+      },
+      {
+        "period": 30,
+        "prediction_period": 1
+      },
+      {
+        "period": 50,
+        "prediction_period": 1
+      }
+    ],
+    "zlema": [
+      {
+        "period": 5,
+        "prediction_period": 1
+      },
+      {
+        "period": 10,
+        "prediction_period": 1
+      },
+      {
+        "period": 15,
+        "prediction_period": 1
+      },
+      {
+        "period": 20,
+        "prediction_period": 1
+      },
+      {
+        "period": 30,
+        "prediction_period": 1
+      },
+      {
+        "period": 50,
+        "prediction_period": 1
+      }
+    ],
+    "macd": true,
+    "adl": true,
+    "momentum": true,
+    "obv": true,
+    "pvt": true,
+    "sar": true,
+    "ichimoku": true,
+    "envelopes": [
+      { "period": 20 },
+      { "period": 50 }
+    ],
+    "aroon": [
+      { "period": 12 },
+      { "period": 25 }
+    ],
+    "adx": [ { "period": 14 } ],
+    "cci": [ { "period": 20 } ],
+    "cmf": [ { "period": 20 } ],
+    "cmo": [
+      { "period": 14 },
+      { "period": 20 }
+    ],
+    "dpo": [ { "period": 20 } ],
+    "rsi": [ { "period": 14 } ],
+    "trix": [ { "period": 15 } ],
+    "wpr": [ { "period": 14 } ],
+    "atr": [ { "period": 14 } ]
+  }
+}

@@ -1,0 +1,86 @@
+﻿{
+  "day_of_week": false,
+  "idle_days": false,
+  "period": 14,
+  "prediction_period": 60,
+  "fill_target_with_slide": true,
+  "indicators": {
+    "total_roc": true,
+    "price_roc": true,
+    "industry_roc": true,
+    "market_roc": true,
+    "roc": [ { "period": 1 } ],
+    "vroc": [ { "period": 1 } ],
+    "bollinger_band": [
+      { "period": 10 },
+      { "period": 15 }
+    ],
+    "sma": [
+      { "period": 5 },
+      { "period": 10 },
+      { "period": 15 },
+      { "period": 20 },
+      { "period": 30 },
+      { "period": 50 }
+    ],
+    "wma": [
+      { "period": 5 },
+      { "period": 10 },
+      { "period": 15 },
+      { "period": 20 },
+      { "period": 30 },
+      { "period": 50 }
+    ],
+    "ema": [
+      { "period": 5 },
+      { "period": 10 },
+      { "period": 15 },
+      { "period": 20 },
+      { "period": 30 },
+      { "period": 50 }
+    ],
+    "dema": [
+      { "period": 5 },
+      { "period": 10 },
+      { "period": 15 },
+      { "period": 20 },
+      { "period": 30 },
+      { "period": 50 }
+    ],
+    "zlema": [
+      { "period": 5 },
+      { "period": 10 },
+      { "period": 15 },
+      { "period": 20 },
+      { "period": 30 },
+      { "period": 50 }
+    ],
+    "macd": true,
+    "adl": true,
+    "momentum": true,
+    "obv": true,
+    "pvt": true,
+    "sar": true,
+    "ichimoku": true,
+    "envelopes": [
+      { "period": 20 },
+      { "period": 50 }
+    ],
+    "aroon": [
+      { "period": 12 },
+      { "period": 25 }
+    ],
+    "adx": [ { "period": 14 } ],
+    "cci": [ { "period": 20 } ],
+    "cmf": [ { "period": 20 } ],
+    "cmo": [
+      { "period": 14 },
+      { "period": 20 }
+    ],
+    "dpo": [ { "period": 20 } ],
+    "rsi": [ { "period": 14 } ],
+    "trix": [ { "period": 15 } ],
+    "wpr": [ { "period": 14 } ],
+    "atr": [ { "period": 14 } ]
+  }
+}
